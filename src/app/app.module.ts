@@ -5,21 +5,25 @@ import { RouterModule }   from '@angular/router';
 import { HttpModule }     from '@angular/http';
 
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroService }          from './hero.service';
+import { DashboardComponent }   from './hero/dashboard/dashboard.component';
+import { HeroesComponent }      from './hero/list/hero-list.component';
+import { HeroDetailComponent }  from './hero/detail/hero-detail.component';
+import { HeroService }          from './hero/hero.service';
+
+import { HeroModule } from './hero/hero.module';
+import { TodoModule } from './todo/todo.module';
 
 import { AppRoutingModule }     from './app-routing.module';
 
-import 'hammerjs';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    TodoModule
   ],
   declarations: [
     AppComponent,
@@ -32,5 +36,6 @@ import 'hammerjs';
   ],
   bootstrap: [ AppComponent ]
 })
+
 export class AppModule {
 }

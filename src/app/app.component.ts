@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
      <nav>
        <a routerLink="/dashboard">Dashboard</a>
        <a routerLink="/heroes">Heroes</a>
+       <a routerLink="/todo/list">Todos</a>
      </nav>
      <router-outlet></router-outlet>
    `,
@@ -13,6 +14,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour of Heroes';
-  test = 'china';
-
 }
