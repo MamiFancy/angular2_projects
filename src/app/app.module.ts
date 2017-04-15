@@ -1,41 +1,43 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
-import { RouterModule }   from '@angular/router';
-import { HttpModule }     from '@angular/http';
+import { HttpModule }    from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './hero/dashboard/dashboard.component';
-import { HeroesComponent }      from './hero/list/hero-list.component';
-import { HeroDetailComponent }  from './hero/detail/hero-detail.component';
-import { HeroService }          from './hero/hero.service';
+import { Router } from '@angular/router';
 
-import { HeroModule } from './hero/hero.module';
-import { TodoModule } from './todo/todo.module';
+import { AppComponent }            from './app.component';
+import { AppRoutingModule }        from './app-routing.module';
 
-import { AppRoutingModule }     from './app-routing.module';
+import { HeroesModule }            from './heroes/heroes.module';
+import { FxrModule }            from './fxr/fxr.module';
+import { SamplesModule }            from './samples/samples.module';
 
-
+import { PageNotFoundComponent }   from './not-found.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    HeroesModule,
+    FxrModule,
+    SamplesModule,
     AppRoutingModule,
     HttpModule,
-    TodoModule
+    BrowserAnimationsModule
   ],
   declarations: [
     AppComponent,
-    HeroDetailComponent,
-    HeroesComponent,
-    DashboardComponent
+    PageNotFoundComponent
   ],
   providers: [
-    HeroService
+
   ],
   bootstrap: [ AppComponent ]
 })
-
 export class AppModule {
+  // Diagnostic only: inspect router configuration
+  constructor(router: Router) {
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  }
 }

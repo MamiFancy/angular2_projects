@@ -1,20 +1,23 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { PageNotFoundComponent }    from './not-found.component';
 
-import { TodoRoutes } from './todo/todo.routes';
-import { HeroRoutes } from './hero/hero.routes';
-
-const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-
-  ...HeroRoutes,
-  ...TodoRoutes
+const appRoutes: Routes = [
+  { path: '', redirectTo: 'fxr', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  imports: [
+    RouterModule.forRoot(
+      appRoutes
+    )
+  ],
+  exports: [
+    RouterModule
+  ],
+  providers: [
+  ]
 })
-
-export class AppRoutingModule {}
+export class AppRoutingModule { }
