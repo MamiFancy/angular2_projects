@@ -25,12 +25,14 @@
 
       <br/><br/>
 
+      <input type="radio" name="amountSource" [(ngModel)]="amountSource" value="src">
       {{ content.input.lblFromAmount}}
-      <input type="text">
+      <input type="text" [(ngModel)]="srcAmount" >
 
       <br/><br/>
+      <input type="radio" name="amountSource" [(ngModel)]="amountSource" value="dest">
       {{ content.input.lblToAmount}}
-      <input type="text">
+      <input type="text" [(ngModel)]="destAmount" >
 
       <br/><br/>
       {{ content.input.lblBottomDisclaimer1 }}

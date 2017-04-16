@@ -14,6 +14,9 @@ export class FxrInputComponent implements OnInit {
   fromAccount:any = "-1";
   toAccount:any = "-1";
   accounts:Array<any>;
+  srcAmount:string;
+  destAmount:string;
+  amountSource:string;
 
   constructor(
     private route: ActivatedRoute,
@@ -29,15 +32,36 @@ export class FxrInputComponent implements OnInit {
     });
   }
 
+  getCurrency(id:any): string{
+    let acct = this.accounts.find(account => account.id === id);
+    if(acct == null){
+      return null;
+    }
+    return acct.currency;
+  }
+
   proceedRecap(){
     console.log('proceedRecap from account: ' + this.fromAccount);
     console.log('proceedRecap to account: ' + this.toAccount);
 
-    let fromAcct = this.accounts.find(account => account.id === this.fromAccount);
-    console.log('proceedRecap from account: ' + fromAcct.currency);
+    let fromAcctCurrency = this.getCurrency(this.fromAccount);
+    console.log('proceedRecap from account: ' + fromAcctCurrency);
 
-    let toAcct = this.accounts.find(account => account.id === this.toAccount);
-    console.log('proceedRecap from account: ' + toAcct.currency);
+    let toAcctCurrency = this.getCurrency(this.toAccount);
+    console.log('proceedRecap from account: ' + toAcctCurrency);
+
+    console.log("amountSource - " + this.amountSource);
+    console.log("amountSource - " + this.amountSource);
+    let amount = this.amountSource === "src"? this.srcAmount : this.destAmount;
+
+    let inputData = {
+      fromAcctCurrency: fromAcctCurrency,
+      toAcctCurrency: toAcctCurrency,
+      amountSource: this.amountSource,
+      amount: amount
+    }
+
+    console.log("input data = " + JSON.stringify(inputData));
 
     this.router.navigate(['fxr/recap']);
   }
