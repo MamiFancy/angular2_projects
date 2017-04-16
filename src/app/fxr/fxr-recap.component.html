@@ -1,0 +1,25 @@
+    <div *ngIf="content">
+      <h2>{{content.common.title}}</h2>
+      <hr/>
+      <h3>{{content.input.subtitle}}</h3>
+      <span>{{content.input.lblDisclaimer1}}</span>
+      <br/><br/>
+
+      {{ content.common.lblFromAccount}}
+
+
+      <br/><br/>
+      {{ content.common.lblToAccount}}
+
+
+      <br/><br/>
+      {{ content.recap.lblBottomDisclaimer1 }}
+
+      <br/><br/>
+      {{ content.recap.lblBottomDisclaimer2 }}
+      <br/><br/>
+      <button (click)="proceedRecap()">Confirm</button>
+    </div>
+
+
+

@@ -1,15 +1,43 @@
 {
-  "title": "FOREIGN EXCHANGE",
-  "subtitle": "FOREIGN EXCHANGE RATE ENQUIRY - RATE DISPLAY",
-  "lblDisclaimer1": "Please select the currency and input the transaction amount",
-  "lblBaseCurrency": "Base currency:",
-  "lblAmount": "Amount*:",
-  "lblChannel": "Channel:",
-  "lblCurrencyDescTitle": "Currency",
-  "lblCurrencyCodeTitle": "Code",
-  "lblBuyRateTitle": "Buy**",
-  "lblSellRateTitle": "Sell**",
-  "lblBottomDisclaimer1": "* The rates displayed are based on the transaction amount.",
-  "lblBottomDisclaimer2": " ** The rates displayed are the bank's indicative bid and ask quotes.",
-  "lblBtnSubmit": "BUY/SELL"
+  "common": {
+    "title": "FOREIGN EXCHANGE",
+    "lblAmount": "Amount*:",
+    "lblFromAccount": "From Account:",
+    "lblToAccount": "To Account:"
+  },
+  "inquiry": {
+    "subtitle": "FOREIGN EXCHANGE RATE ENQUIRY - RATE DISPLAY",
+    "lblDisclaimer1": "Please select the currency and input the transaction amount",
+    "lblBaseCurrency": "Base currency:",
+    "lblAmount": "Amount*:",
+    "lblChannel": "Channel:",
+    "lblCurrencyDescTitle": "Currency",
+    "lblCurrencyCodeTitle": "Code",
+    "lblBuyRateTitle": "Buy**",
+    "lblSellRateTitle": "Sell**",
+    "lblBottomDisclaimer1": "* The rates displayed are based on the transaction amount.",
+    "lblBottomDisclaimer2": " ** The rates displayed are the bank's indicative bid and ask quotes.",
+    "lblBtnSubmit": "BUY/SELL"
+  },
+  "input":{
+    "subtitle": "FOREIGN EXCHANGE RATE INPUT",
+    "lblDisclaimer1": "Please select the currency and input the transaction amount",
+    "lblFromAmount": "From Amount:",
+    "lblToAmount": "To Amount:",
+    "lblBottomDisclaimer1": "* The rates displayed are based on the transaction amount.",
+    "lblBottomDisclaimer2": " ** The rates displayed are the bank's indicative bid and ask quotes.",
+    "lblBtnSubmit": "Next>"
+
+  },
+  "recap":{
+    "subtitle": "FOREIGN EXCHANGE RATE RECAP"
+  },
+  "confirm":{
+    "subtitle": "FOREIGN EXCHANGE RATE CONFIRM",
+    "lblDisclaimer1": "Please select the currency and input the transaction amount",
+    "lblFromAmount": "From Amount:",
+    "lblToAmount": "To Amount:",
+    "lblBottomDisclaimer1": "* The rates displayed are based on the transaction amount.",
+    "lblBottomDisclaimer2": " ** The rates displayed are the bank's indicative bid and ask quotes."
+  }
 }

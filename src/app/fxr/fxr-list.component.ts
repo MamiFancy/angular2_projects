@@ -8,34 +8,14 @@ import { FxrRatesTableComponent } from './fxr-rates-table.component';
 import { FxrService }  from './fxr.service';
 
 @Component({
-  template: `
-    <div *ngIf="content">
-      <h2>{{content.title}}</h2>
-      <hr/>
-      <h3>{{content.subtitle}}</h3>
-      <span>{{content.lblDisclaimer1}}</span>
-
-      <fx-rates-table [rates] = "rates"></fx-rates-table>
-
-      <br/><br/>
-      {{content.lblBottomDisclaimer1}}
-      <br/><br/>
-      {{content.lblBottomDisclaimer2}}
-      <br/><br/>
-      <button (click)="buySellRate()">{{content.lblBtnSubmit}}</button>
-
-
-    </div>
-  `
+  templateUrl: './fxr-list.component.html'
 })
 
 export class FxrListComponent implements OnInit {
 
   content:any;
-  private selectedId: number;
-
   rates:any;
-
+  selectedRate: any;
   constructor(
     private service: FxrService,
     private route: ActivatedRoute,
@@ -50,8 +30,14 @@ export class FxrListComponent implements OnInit {
     });
   }
 
+  onSelectedRate(rate:any) {
+    this.selectedRate = rate;
+    console.log('onSelectedRate: ' + this.selectedRate.targetCurrencyCode);
+  }
+
   buySellRate() {
-    console.log('buy sell rate...');
+    console.log('buy sell: ');
+    this.router.navigate(['fxr/input']);
   }
 
 }

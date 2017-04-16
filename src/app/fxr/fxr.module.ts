@@ -5,6 +5,9 @@ import { FormsModule }    from '@angular/forms';
 import { FxrListComponent }    from './fxr-list.component';
 import { FxrDetailComponent }  from './fxr-detail.component';
 import { FxrRatesTableComponent } from './fxr-rates-table.component';
+import { FxrInputComponent } from './fxr-input.component';
+import { FxrRecapComponent } from './fxr-recap.component';
+import { FxrConfirmComponent } from './fxr-confirm.component';
 
 import { FxrService } from './fxr.service';
 
@@ -19,7 +22,10 @@ import { FxrRoutingModule } from './fxr-routing.module';
   declarations: [
     FxrListComponent,
     FxrDetailComponent,
-    FxrRatesTableComponent
+    FxrRatesTableComponent,
+    FxrInputComponent,
+    FxrRecapComponent,
+    FxrConfirmComponent
   ],
   providers: [ FxrService ]
 })

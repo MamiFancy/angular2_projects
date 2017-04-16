@@ -1,0 +1,41 @@
+    <div *ngIf="content">
+      <h2>{{content.common.title}}</h2>
+      <hr/>
+      <h3>{{content.input.subtitle}}</h3>
+      <span>{{content.input.lblDisclaimer1}}</span>
+      <br/><br/>
+
+      {{ content.common.lblFromAccount}}
+      <select [(ngModel)]="fromAccount">
+        <option value="-1">Select Account</option>
+        <option>1111</option>
+        <option>2222</option>
+        <option>3333</option>
+      </select>
+
+      <br/><br/>
+      {{ content.common.lblToAccount}}
+      <select [(ngModel)]="toAccount">
+        <option value="-1">Select Account</option>
+        <option>t1111</option>
+        <option>t2222</option>
+        <option>t3333</option>
+      </select>
+
+      <br/><br/>
+
+      {{ content.input.lblFromAmount}}
+      <input type="text">
+
+      <br/><br/>
+      {{ content.input.lblToAmount}}
+      <input type="text">
+
+      <br/><br/>
+      {{ content.input.lblBottomDisclaimer1 }}
+
+      <br/><br/>
+      {{ content.input.lblBottomDisclaimer2 }}
+      <br/><br/>
+      <button (click)="proceedRecap()">{{content.input.lblBtnSubmit}}</button>
+    </div>

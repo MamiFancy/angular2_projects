@@ -1,0 +1,53 @@
+    <div *ngIf="content">
+      <h2>{{content.common.title}}</h2>
+      <hr/>
+      <h3>{{content.inquiry.subtitle}}</h3>
+      <span>{{content.inquiry.lblDisclaimer1}}</span>
+
+      <table>
+      <thead>
+        <tr>
+          <td>
+          </td>
+          <td>
+            Currency
+          </td>
+          <td>
+            Code
+          </td>
+          <td>
+            Buy**
+          </td>
+          <td>
+            Sell**
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let rate of rates" (click)="onSelectedRate(rate)">
+          <td>
+            <input type="radio" name="selectedCurrencyCode">
+          </td>
+          <td>
+            {{ rate.targetCurrencyDesc }}
+          </td>
+          <td>
+            {{ rate.targetCurrencyCode }}
+          </td>
+          <td>
+            {{ rate.buyRate }}
+          </td>
+          <td>
+            {{ rate.sellRate }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+      <br/><br/>
+      {{content.inquiry.lblBottomDisclaimer1}}
+      <br/><br/>
+      {{content.inquiry.lblBottomDisclaimer2}}
+      <br/><br/>
+      <button (click)="buySellRate()">{{content.inquiry.lblBtnSubmit}}</button>
+    </div>
