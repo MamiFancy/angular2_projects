@@ -1,3 +1,15 @@
 {
-  "title": "FX Rates - Input..."
+  "title": "FOREIGN EXCHANGE",
+  "subtitle": "FOREIGN EXCHANGE RATE ENQUIRY - RATE DISPLAY",
+  "lblDisclaimer1": "Please select the currency and input the transaction amount",
+  "lblBaseCurrency": "Base currency:",
+  "lblAmount": "Amount*:",
+  "lblChannel": "Channel:",
+  "lblCurrencyDescTitle": "Currency",
+  "lblCurrencyCodeTitle": "Code",
+  "lblBuyRateTitle": "Buy**",
+  "lblSellRateTitle": "Sell**",
+  "lblBottomDisclaimer1": "* The rates displayed are based on the transaction amount.",
+  "lblBottomDisclaimer2": " ** The rates displayed are the bank's indicative bid and ask quotes.",
+  "lblBtnSubmit": "BUY/SELL"
 }

@@ -1,0 +1,58 @@
+{
+  "baseCurrency": "RUB",
+  "rates": [{
+      "targetCurrencyCode": "EUR",
+      "targetCurrencyDesc": "EURO",
+      "buyRate": "58.2494",
+      "sellRate": "61.4672"
+  },
+  {
+      "targetCurrencyCode": "GBP",
+      "targetCurrencyDesc": "STERLING POUND",
+      "buyRate": "68.7493",
+      "sellRate": "72.5725"
+  },
+  {
+      "targetCurrencyCode": "AUD",
+      "targetCurrencyDesc": "AUSTRALIAN DOLLAR",
+      "buyRate": "41.6208",
+      "sellRate": "43.9581"
+  },
+  {
+      "targetCurrencyCode": "NZD",
+      "targetCurrencyDesc": "NEW ZEALAND DOLLAR",
+      "buyRate": "38.3698",
+      "sellRate": "40.6693"
+  },
+  {
+      "targetCurrencyCode": "USD",
+      "targetCurrencyDesc": "US DOLLAR",
+      "buyRate": "54.9160",
+      "sellRate": "57.9005"
+  },
+  {
+      "targetCurrencyCode": "CHF",
+      "targetCurrencyDesc": "SWISS FRANC",
+      "buyRate": "54.1842",
+      "sellRate": "57.5511"
+  },
+  {
+      "targetCurrencyCode": "JPY",
+      "targetCurrencyDesc": "JAPANESE YEN",
+      "buyRate": "0.5028",
+      "sellRate": "0.5311"
+  },
+  {
+      "targetCurrencyCode": "SGD",
+      "targetCurrencyDesc": "SINGAPORE DOLLAR",
+      "buyRate": "39.0279",
+      "sellRate": "41.3319"
+  },
+  {
+      "targetCurrencyCode": "ZAR",
+      "targetCurrencyDesc": "SOUTH AFRICA RAND",
+      "buyRate": "4.0443",
+      "sellRate": "4.3232"
+  }
+  ]
+}

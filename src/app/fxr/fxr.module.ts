@@ -4,6 +4,7 @@ import { FormsModule }    from '@angular/forms';
 
 import { FxrListComponent }    from './fxr-list.component';
 import { FxrDetailComponent }  from './fxr-detail.component';
+import { FxrRatesTableComponent } from './fxr-rates-table.component';
 
 import { FxrService } from './fxr.service';
 
@@ -17,7 +18,8 @@ import { FxrRoutingModule } from './fxr-routing.module';
   ],
   declarations: [
     FxrListComponent,
-    FxrDetailComponent
+    FxrDetailComponent,
+    FxrRatesTableComponent
   ],
   providers: [ FxrService ]
 })
