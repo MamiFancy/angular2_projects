@@ -8,18 +8,19 @@
       {{ content.common.lblFromAccount}}
       <select [(ngModel)]="fromAccount">
         <option value="-1">Select Account</option>
-        <option>1111</option>
-        <option>2222</option>
-        <option>3333</option>
+
+        <option *ngFor="let account of accounts" value="{{ account.id }}">
+          {{ account.accountLabel }}
+        </option>
       </select>
 
       <br/><br/>
       {{ content.common.lblToAccount}}
       <select [(ngModel)]="toAccount">
         <option value="-1">Select Account</option>
-        <option>t1111</option>
-        <option>t2222</option>
-        <option>t3333</option>
+        <option *ngFor="let account of accounts" value="{{ account.id }}">
+          {{ account.accountLabel }}
+        </option>
       </select>
 
       <br/><br/>

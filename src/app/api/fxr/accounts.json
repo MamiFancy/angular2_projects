@@ -1,0 +1,19 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "accountLabel": "Checking xxxx1234",
+      "currency": "USD"
+    },
+    {
+      "id": "2",
+      "accountLabel": "Checking xxxx2222",
+      "currency": "EUR"
+    },
+    {
+      "id": "3",
+      "accountLabel": "Checking xxxx3333",
+      "currency": "GBP"
+    }
+  ]
+}

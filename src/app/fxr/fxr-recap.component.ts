@@ -26,4 +26,9 @@ export class FxrRecapComponent implements OnInit {
     console.log('proceed confirm: ');
     this.router.navigate(['fxr/confirm']);
   }
+
+  proceedBack(){
+    console.log('proceed back: ');
+    this.router.navigate(['fxr/input']);
+  }
 }

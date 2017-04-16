@@ -20,4 +20,8 @@ export class FxrService {
     console.log('get fx rates....');
     return this.http.get('/app/api/fxr/rates.json').map(res => res.json());
   }
+
+  getAccounts() {
+    return this.http.get('/app/api/fxr/accounts.json').map(res => res.json());
+  }
 }
